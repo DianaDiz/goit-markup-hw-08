@@ -1,0 +1,39 @@
+.about {
+padding-bottom: 94px;
+}
+
+.about__list-img {
+display: flex;
+}
+
+.about__list-img .list + .list {
+margin-left: 30px;
+}
+
+.img-desk {
+display: block;
+max-width: 100%;
+height: auto;
+}
+
+.about__text-desktop {
+position: absolute;
+bottom: 0;
+height: 70px;
+width: 100%;
+color: #ffffff;
+background: #2F303ACC;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+
+.about__desktop-applications {
+position: relative;
+}

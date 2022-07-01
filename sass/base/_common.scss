@@ -1,0 +1,28 @@
+body {
+font-family: 'Roboto', sans-serif;
+color: var(--primary-text-color);
+background-color: #FFFFFF;
+}
+
+
+.heading {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+margin-bottom: 50px;
+}
+
+.images {
+display: block;
+}
+
+.list {
+list-style: none;
+}
+
+.link {
+text-decoration: none;
+}
