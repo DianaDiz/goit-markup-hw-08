@@ -80,6 +80,8 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
 width: 100%;
 @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
+    display: flex;
+    flex-direction: column;
 }
 @media screen and (min-width: 1200px) {
     width: calc((100% - 60px) / 3);
@@ -107,13 +109,14 @@ height: 100%;
 color: #FFFFFF;
 background: #2196F3E5;
 padding: 63px 24px;
-transform: translateY(100%);
+transform: translateY(101%);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-list__border-work {
 border: 1px solid #ECECEC;
 padding: 20px 24px;
+flex-grow: 1;
 
 }
 
