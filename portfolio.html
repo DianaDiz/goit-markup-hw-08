@@ -15,23 +15,28 @@
 
 <body>
     
-<!-- <header class="header border">
+<header class="header border">
         <div class="container">
         <nav class="main-list">
         <a class="logo link" href="" lang="en">Web<span class="studio">Studio</span></a>
+        <button type="button" class="menu-open-btn">
+            <svg class="icon-mobopen" width="40" height="40">
+                    <use href="./images/icons.svg#icon-mobopen"></use>
+                </svg>
+        </button>
         <ul class="site-nav list">
             <li class="site-nav__item"><a href="./index.html" class="site-nav__link link">Студия</a></li>
             <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link link current link-current">Портфолио</a></li>
             <li class="site-nav__item"><a href="" class="site-nav__link link">Контакты</a></li>
         </ul>
         <ul class="header-contacts contacts">
-            <li class="list item">
-                <a href="mailto:info@devstudio.com" class="link">
+            <li class="header-contacts_item list item">
+                <a href="mailto:info@devstudio.com" class="header-contacts_connect link">
                     <svg class="contacts__icon-envelope" width="16" height="12">
                         <use href="./images/icons.svg#icon-envelope"></use>
                     </svg>info@devstudio.com</a>
             </li>
-            <li class="list item"><a href="tel:+380961111111" class="link">
+            <li class="header-contacts_item list item"><a href="tel:+380961111111" class="header-contacts_connect link">
                 <svg class="contacts__icon-vector" width="10" height="16">
                         <use href="./images/icons.svg#icon-vector"></use>
                 </svg>+38 096 111 11 11</a>
@@ -39,8 +44,66 @@
         </ul>
         </nav>
         </div>
+        <div class="mob-menu is-hidden">
+            <div class="container">
+                <div>
+                <button type="button" class="menu-close-btn">
+                <svg class="icon-mobclose" width="40" height="40">
+                    <use href="./images/icons.svg#icon-mobclose"></use>
+                </svg>
+        </button>
+        <ul class="mob-menu-list list">
+            <li class="mob-menu-list__item"><a href="./index.html" class="mob-menu-list__link link">Студия</a></li>
+            <li class="mob-menu-list__item"><a href="./portfolio.html" class="mob-menu-list__link link current ">Портфолио</a></li>
+            <li class="mob-menu-list__item"><a href="" class="mob-menu-list__link link">Контакты</a></li>
+        </ul>
+                </div>
+            <div class="mob-menu-bottom">
+        <ul class="mob-menu_contacts contacts">
+            <li class="mob-menu_item list">
+                <a href="tel:+380961111111" class="mob-menu_tel link">+38 096 111 11 11</a>
+            </li>
+            <li class="mob-menu_item list">
+                <a href="mailto:info@devstudio.com" class="mob-menu_mail link">info@devstudio.com</a>
+            </li>
+        </ul>
+        <ul class="mob-soc-list list">
+            <li class="mob-soc-item">
+                <a href="htpps://www.google.com/"
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >Instagram</a>
+            </li>
+            <li class="mob-soc-item">
+                <a href="htpps://www.google.com/"
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >Twitter</a>
+            </li>
+            <li class="mob-soc-item">
+                <a href="htpps://www.google.com/"
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >Facebook</a>
+            </li>
+            <li class="mob-soc-item">
+                <a href="htpps://www.google.com/"
+                class="mob-soc-link link"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >LinkedIn</a>
+            </li>
+        </ul>
+            </div>
+            
+        
+        </div>
+        </div>
 
-    </header> -->
+    </header>
 
     <main class="main-info">
         <section class="products">
@@ -66,7 +129,32 @@
             <ul class="work-list">
                 <li class="work-list__project list">
                     <div class="work-list__box-text">
-                        <img class="images" src="./images/img7.jpg" alt="открытый ноутбук" width="370">
+                        <picture>
+                            <source
+                            srcset="
+                        ./images/img7.jpg 1x,
+                        ./images/img7-2x.jpg 2x"
+                        media="(min-width:1200px)">
+                        <source
+                            srcset="
+                        ./images/img7-tab.jpg 1x,
+                        ./images/img7-tab2x.jpg 2x"
+                        media="(min-width:768px)">
+                        <source
+                            srcset="
+                        ./images/img7-mob.jpg 1x,
+                        ./images/img7-mob2x.jpg 2x"
+                        media="(min-width:320px)">
+                        <img 
+                        srcset="
+                        ./images/img7.jpg 1x,
+                        ./images/img7-2x.jpg 2x"
+                        class="images" 
+                        src="./images/img7.jpg" 
+                        alt="открытый ноутбук" 
+                        width="370">
+                        </picture>
+                        
                         <p class="work-list__text-work">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -79,7 +167,32 @@
                 </li>
                 <li class="work-list__project list">
                     <div class="work-list__box-text">
-                        <img class="images" src="./images/img8.jpg" alt="постер игроков" width="370">
+                        <picture>
+                            <source
+                            srcset="
+                        ./images/img8.jpg 1x,
+                        ./images/img8-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <source
+                            srcset="
+                        ./images/img8-tab.jpg 1x,
+                        ./images/img8-tab2x.jpg 2x"
+                        media="(min-width: 768px)">
+                        <source
+                            srcset="
+                        ./images/img8-mob.jpg 1x,
+                        ./images/img8-mob2x.jpg 2x"
+                        media="(min-width: 320px)">
+                        <img 
+                        srcset="
+                        ./images/img8.jpg 1x,
+                        ./images/img8-2x.jpg 2x"
+                        class="images" 
+                        src="./images/img8.jpg" 
+                        alt="постер игроков" 
+                        width="370">
+                        </picture>
+                        
                         <p class="work-list__text-work">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -92,7 +205,32 @@
                 </li>
                 <li class="work-list__project list">
                     <div class="work-list__box-text">
-                        <img class="images" src="./images/img9.jpg" alt="название ресторана" width="370">
+                        <picture>
+                            <source
+                            srcset="
+                        ./images/img9.jpg 1x,
+                        ./images/img9-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <source
+                            srcset="
+                        ./images/img9-tab.jpg 1x,
+                        ./images/img9-tab2x.jpg 2x"
+                        media="(min-width: 768px)">
+                        <source
+                            srcset="
+                        ./images/img9-mob.jpg 1x,
+                        ./images/img9-mob2x.jpg 2x"
+                        media="(min-width: 320px)">
+                        <img 
+                        srcset="
+                        ./images/img9.jpg 1x,
+                        ./images/img9-2x.jpg 2x"
+                        class="images" 
+                        src="./images/img9.jpg" 
+                        alt="название ресторана" 
+                        width="370">
+                        </picture>
+                        
                         <p class="work-list__text-work">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -105,7 +243,32 @@
                 </li>
                 <li class="work-list__project list">
                     <div class="work-list__box-text">
-                        <img class="images" src="./images/img10.jpg" alt="наушники" width="370">
+                        <picture>
+                            <source
+                            srcset="
+                        ./images/img10.jpg 1x,
+                        ./images/img10-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <source
+                            srcset="
+                        ./images/img10-tab.jpg 1x,
+                        ./images/img10-tab2x.jpg 2x"
+                        media="(min-width: 768px)">
+                        <source
+                            srcset="
+                        ./images/img10-mob.jpg 1x,
+                        ./images/img10-mob2x.jpg 2x"
+                        media="(min-width: 320px)">
+                        <img 
+                        srcset="
+                        ./images/img10.jpg 1x,
+                        ./images/img10-2x.jpg 2x"
+                        class="images" 
+                        src="./images/img10.jpg" 
+                        alt="наушники" 
+                        width="370">
+                        </picture>
+                        
                         <p class="work-list__text-work">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -118,7 +281,32 @@
                 </li>
                 <li class="work-list__project list">
                     <div class="work-list__box-text">
-                        <img class="images" src="./images/img11.jpg" alt="коробки" width="370">
+                        <picture>
+                            <source
+                            srcset="
+                        ./images/img11.jpg 1x,
+                        ./images/img11-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <source
+                            srcset="
+                        ./images/img11-tab.jpg 1x,
+                        ./images/img11-tab2x.jpg 2x"
+                        media="(min-width: 768px)">
+                        <source
+                            srcset="
+                        ./images/img11-mob.jpg 1x,
+                        ./images/img11-mob2x.jpg 2x"
+                        media="(min-width: 320px)">
+                        <img 
+                        srcset="
+                        ./images/img11.jpg 1x,
+                        ./images/img11-2x.jpg 2x"
+                        class="images" 
+                        src="./images/img11.jpg" 
+                        alt="коробки" 
+                        width="370">
+                        </picture>
+                        
                         <p class="work-list__text-work">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -131,7 +319,32 @@
                 </li>
                 <li class="work-list__project list">
                     <div class="work-list__box-text">
-                        <img class="images" src="./images/img12.jpg" alt="компьютер" width="370">
+                        <picture>
+                            <source
+                            srcset="
+                        ./images/img12.jpg 1x,
+                        ./images/img12-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <source
+                            srcset="
+                        ./images/img12-tab.jpg 1x,
+                        ./images/img12-tab2x.jpg 2x"
+                        media="(min-width: 768px)">
+                        <source
+                            srcset="
+                        ./images/img12-mob.jpg 1x,
+                        ./images/img12-mob2x.jpg 2x"
+                        media="(min-width: 320px)">
+                        <img 
+                        srcset="
+                        ./images/img12.jpg 1x,
+                        ./images/img12-2x.jpg 2x"
+                        class="images" 
+                        src="./images/img12.jpg" 
+                        alt="компьютер" 
+                        width="370">
+                        </picture>
+                        
                         <p class="work-list__text-work">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -144,7 +357,32 @@
                 </li>
                 <li class="work-list__project list">
                     <div class="work-list__box-text">
-                        <img class="images" src="./images/img13.jpg" alt="раскрытая книга" width="370">
+                        <picture>
+                            <source
+                            srcset="
+                        ./images/img13.jpg 1x,
+                        ./images/img13-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <source
+                            srcset="
+                        ./images/img13-tab.jpg 1x,
+                        ./images/img13-tab2x.jpg 2x"
+                        media="(min-width: 768px)">
+                        <source
+                            srcset="
+                        ./images/img13-mob.jpg 1x,
+                        ./images/img13-mob2x.jpg 2x"
+                        media="(min-width: 320px)">
+                        <img 
+                        srcset="
+                        ./images/img13.jpg 1x,
+                        ./images/img13-2x.jpg 2x"
+                        class="images" 
+                        src="./images/img13.jpg" 
+                        alt="раскрытая книга" 
+                        width="370">
+                        </picture>
+                        
                         <p class="work-list__text-work">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -157,7 +395,32 @@
                 </li>
                 <li class="work-list__project list">
                     <div class="work-list__box-text">
-                        <img class="images" src="./images/img14.jpg" alt="бирка" width="370">
+                        <picture>
+                            <source
+                            srcset="
+                        ./images/img14.jpg 1x,
+                        ./images/img14-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <source
+                            srcset="
+                        ./images/img14-tab.jpg 1x,
+                        ./images/img14-tab2x.jpg 2x"
+                        media="(min-width: 768px)">
+                        <source
+                            srcset="
+                        ./images/img14-mob.jpg 1x,
+                        ./images/img14-mob2x.jpg 2x"
+                        media="(min-width: 320px)">
+                        <img 
+                        srcset="
+                        ./images/img14.jpg 1x,
+                        ./images/img14-2x.jpg 2x"
+                        class="images" 
+                        src="./images/img14.jpg" 
+                        alt="бирка" 
+                        width="370">
+                        </picture>
+                        
                         <p class="work-list__text-work">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -170,7 +433,32 @@
                 </li>
                 <li class="work-list__project list">
                     <div class="work-list__box-text">
-                        <img class="images" src="./images/img15.jpg" alt="набор на компьютере" width="370">
+                        <picture>
+                            <source
+                            srcset="
+                        ./images/img15.jpg 1x,
+                        ./images/img15-2x.jpg 2x"
+                        media="(min-width: 1200px)">
+                        <source
+                            srcset="
+                        ./images/img15-tab.jpg 1x,
+                        ./images/img15-tab2x.jpg 2x"
+                        media="(min-width: 768px)">
+                        <source
+                            srcset="
+                        ./images/img15-mob.jpg 1x,
+                        ./images/img15-mob2x.jpg 2x"
+                        media="(min-width: 320px)">
+                        <img 
+                        srcset="
+                        ./images/img15jpg 1x,
+                        ./images/img15-2x.jpg 2x"
+                        class="images" 
+                        src="./images/img15.jpg" 
+                        alt="набор на компьютере" 
+                        width="370">
+                        </picture>
+                        
                         <p class="work-list__text-work">
                         Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                         </p>
@@ -186,8 +474,9 @@
         </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
+            <div class="logo-soc-tab">
             <div class="logo-address">
                 <a href="" lang="en" class="logo link">Web<span class="studio-white">Studio</span></a>
         <address class="address">
@@ -198,9 +487,9 @@
             <li class="list"><a href="tel:+380991111111" class="mailtel link">+38 099 111 11 11</a></li>
         </ul>
             </div>
-            <div class="soc-address">
+        <div class="soc-address">
             <p class="invitation">Присоединяйтесь</p>
-            <ul class="soc-list list">
+            <ul class="footer-soc-list list">
                 <li class="soc-list__item">
                     <a href="" class="footer-soc-link">
                         <svg class="soc-icon" width="20" height="20">
@@ -231,7 +520,8 @@
                 </li>
             </ul>
         </div>
-        <div class="subscribe-wrap">
+        </div>
+            <div class="subscribe-wrap">
                 <p class="subscribe-wrap-text">Подпишитесь на рассылку</p>
                 <form class="subscribe">
             
@@ -246,10 +536,10 @@
                 </svg>
                 </button>
             </div>
-        
+        </form>
         </div>
-    </footer> -->
-
+    </footer>
+<script src="./js/menu.js"></script>
 </body>
 
 </html>

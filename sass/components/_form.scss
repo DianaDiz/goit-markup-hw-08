@@ -76,8 +76,8 @@ color: rgba(117, 117, 117, 0.5);
 
 .check-text {
 font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
+font-size: 12px;
+line-height: 1.17;
 letter-spacing: 0.03em;
 color: #757575;
 display: flex;
@@ -96,6 +96,13 @@ border: none;
 background-repeat: no-repeat;
 background-position: center;
 }
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 1200px) {
+font-size: 14px;
+line-height: 1.71;
 }
 }
 

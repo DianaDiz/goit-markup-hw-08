@@ -1,14 +1,49 @@
 .footer {
 background-color: var(--brand-color);
-padding-bottom: 60px;
-padding-top: 60px;
+
 .container {
-display: flex;
+padding: 60px 15px;
+flex-direction: column;
+text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: inline-flex;
+    text-align: center;
+}
+    }
+    
+
+@media screen and (min-width: 1200px) {
+    .container{
+    
+    // padding-bottom: 60px;
+    // padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    }
+    
 }
 }
 
 .logo-address {
-margin-right: 70px;
+
+    @media screen and (min-width: 768px) {
+display: inline-block;
+// display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+}
+
+    @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 }
 
 .invitation {
@@ -19,6 +54,11 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
 margin-bottom: 20px;
+}
+
+.footer-soc-list {
+display: flex;
+// justify-content: center;
 }
 
 .studio-white {
@@ -32,16 +72,25 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: #FFFFFF;
 margin-top: 20px;
-margin-bottom: 9px;
+margin-bottom: 8px;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover {
 color: var(--color-accent);
 }
+@media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+}
 }
 
 .mail {
-margin-bottom: 9px;
+&:not(:last-child) {
+margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+}
 }
 
 .mailtel {
@@ -54,6 +103,29 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 &:hover,
 &:focus {
 color: var(--color-accent);
+}
+}
+
+.soc-address {
+margin-top: 60px;
+margin-bottom: 60px;
+display: inline-block;
+// display: block;
+@media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+@media screen and (min-width: 1200px) {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+}
+
+.logo-soc-tab {
+@media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
 }
 }
 
@@ -78,7 +150,30 @@ fill: #FFFFFF;
 }
 
 .subscribe-wrap {
-margin-left: 93px;
+
+@media screen and (min-width: 768px) {
+    
+}
+@media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+}
+
+.subscribe {
+    @media screen and (min-width: 768px) {
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
 }
 
 .subscribe-wrap-text {
@@ -92,14 +187,19 @@ color: #FFFFFF;
 }
 
 .subscribe-field {
-width: 358px;
+width: 450px;
 height: 50px;
 border: 1px solid #FFFFFF4D;
 border-radius: 4px;
 background-color: var(--brand-color);
-margin-right: 12px;
+margin-right: 0;
+margin-bottom: 20px;
 padding: 15px 16px;
 color: #FFFFFF;
+@media screen and (min-width:1200px) {
+    margin-right: 12px;
+    width: 358px;
+}
 }
 
 .icon-send {
