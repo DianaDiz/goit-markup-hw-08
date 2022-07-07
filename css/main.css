@@ -14,12 +14,12 @@
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -56,12 +56,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .heading {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -83,14 +84,7 @@ body {
 .header {
   background-color: #ffffff;
   position: relative;
-  padding-top: 10px;
 }
-@media screen and (min-width: 768px) {
-  .header {
-    padding-top: 21px;
-  }
-}
-
 .border {
   border-bottom: 1px solid #ECECEC;
 }
@@ -374,8 +368,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .main {
-    padding-bottom: 200px;
-    padding-top: 200px;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
@@ -664,7 +656,7 @@ body {
   padding-bottom: 60px;
   padding-top: 60px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .clients {
     padding-bottom: 94px;
     padding-top: 94px;
@@ -858,7 +850,6 @@ body {
   .footer .container {
     padding-top: 60px;
     padding-bottom: 60px;
-    display: inline-flex;
     text-align: center;
   }
 }
@@ -963,7 +954,7 @@ body {
 @media screen and (min-width: 768px) {
   .logo-soc-tab {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -986,12 +977,18 @@ body {
   fill: #FFFFFF;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe-wrap {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe-wrap {
     margin-left: 93px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 0;
   }
 }
 

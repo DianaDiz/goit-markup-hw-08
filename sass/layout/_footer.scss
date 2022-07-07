@@ -11,7 +11,9 @@ text-align: center;
     .container{
     padding-top: 60px;
     padding-bottom: 60px;
-    display: inline-flex;
+    // padding-left: 76px;
+    // padding-right: 89px;
+    // display: inline-flex;
     text-align: center;
 }
     }
@@ -125,7 +127,8 @@ display: inline-block;
 .logo-soc-tab {
 @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    justify-content: space-around;
 }
 }
 
@@ -152,13 +155,14 @@ fill: #FFFFFF;
 .subscribe-wrap {
 
 @media screen and (min-width: 768px) {
-    
+margin-top: 60px;
 }
 @media screen and (min-width: 1200px) {
     margin-left: 93px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 0;
 }
 }
 
