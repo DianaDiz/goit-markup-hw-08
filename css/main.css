@@ -7,19 +7,18 @@
 }
 
 .container {
-  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 100%;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 100%;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -464,19 +463,15 @@ body {
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
 .benefits__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.benefits__item {
-  width: 100%;
-}
 @media screen and (min-width: 768px) {
   .benefits__item {
-    width: calc((100% - 30px) / 2);
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -703,9 +698,6 @@ body {
   border-color: var(--color-accent);
 }
 
-.clients__list-logo {
-  width: calc((100% - 30px) / 2);
-}
 @media screen and (min-width: 768px) {
   .clients__list-logo {
     width: calc((100% - 60px) / 3);
@@ -1018,7 +1010,7 @@ body {
 }
 
 .subscribe-field {
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3019607843);
   border-radius: 4px;
